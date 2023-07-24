@@ -56,7 +56,7 @@ public class IndexController {
 		this.now = LocalDateTime.now();
 
 		model.addAttribute("time", dtf.format(now));
-		model.addAttribute("nextBusTime", jsonSearchingEngine.getNextBus(this.now.getDayOfMonth(), this.now.getHour() - 10));
+		model.addAttribute("nextBusTime", jsonSearchingEngine.getNextBus(this.now.getDayOfMonth(), this.now.getHour()));
 		return "index";
 	}
 
