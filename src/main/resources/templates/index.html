@@ -1,11 +1,11 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head> 
-    <title>Getting Started: Serving Web Content</title> 
+    <title>バス時刻表</title> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
     <p th:text="'現在の時刻は, ' + ${time} + 'です。'" />
-    <p th:text="'次のバスは, ' + ${nextBusTime} + 'です。'" />
+    <p th:text="'次のバスは, ' + ${nextBusTime} + ' (分) です。'" />
 </body>
 </html>
